@@ -330,7 +330,7 @@ select:hover {
     -webkit-appearance: none;
     -moz-appearance: none;
     background: transparent;
-    background-image: url("../images/arrow.svg");
+    background-image: url("../assets/images/arrow.svg");
     background-size: 12px;
     background-repeat: no-repeat;
     background-position-x: 90%;
