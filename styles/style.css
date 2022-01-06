@@ -525,7 +525,7 @@ table {
     }
 }
  /* END TABLE */
- 
+
 @media screen and  (max-width:650px)  {
     .container-1, .container-2, .container-3, .container-5{
         width: 95%;
@@ -718,7 +718,7 @@ table {
         right: 3%;
     }
     table td{
-        font-size: 17px;
+        font-size: 15px;
     }
     .line-1{
         display: grid;
