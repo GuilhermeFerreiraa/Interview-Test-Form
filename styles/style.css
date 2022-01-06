@@ -519,7 +519,7 @@ table {
     }
     .line-2 {
         display: block;
-        margin: 0 auto;
+        margin: 90px auto 0;
     }
     .container-2 .line-1{
         grid-template-columns: 1fr;
