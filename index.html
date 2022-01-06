@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- ====== css reset ======  -->
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <!-- ====== css style ======  -->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title> Formulário Responsivo | Teste </title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar" id="topnav">
+            <div class="logo">
+                <a href="#home">
+                    <img src="./images/logo-1.png" alt="logo" height="40" width="50" />
+                </a>
+            </div>
+            <a href="#cartaz">Cartaz</a>
+            <a href="#midia">Mídia</a>
+            <a href="#administracao">Administração</a>
+            <a href="#client">
+                <img src="https://github.com/mdo.png" style="border-radius: 50%;" height="50" width="50"
+                    alt="img-perfil" />
+            </a>
+            <a href="javascript:void(0);" class="icon" onclick="responsive()">
+                <i id="icon" class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <!--- Dados do Produto -->
+        <section>
+            <div class="container-1">
+                <form class="form-1">
+                    <h1 class="title">Dados do Produto
+                        <img src="images/down-arrow.png" class="btn" onClick="hiddenSection()" />
+                    </h1>
+                    <hr style="height:1px;border-width:0;color:gray;background-color:gray">
+                    <br>
+                    <div id="section-1" class="line-1">
+                        <div class="produto_text">
+                            <label for="prod-produto">Produto</label>
+                            <br>
+                            <input 
+                            class="content" 
+                            id="produto" 
+                            name="prod-produto" 
+                            type="text" 
+                            required
+                            autocomplete="off" />
+                        </div>
+                        <br>
+                        <div class="descricao_text">
+                            <label for="desc-descricao">Descrição</label>
+                            <br>
+                            <input 
+                            class="content" 
+                            id="descricao" 
+                            name="desc-descricao" 
+                            type="text" 
+                            class="produto_text"
+                            required
+                            autocomplete="off" />
+                        </div>
+                        <br>
+                    </div>
+                    <div id="section-1-2" class="line-2">
+                        <div class="departamento_text">
+                            <label for="depar-departamento">Departamento</label>
+                            <br>
+                            <input 
+                            class="content-text" 
+                            id="departamento" 
+                            name="depar-departamento" 
+                            type="text"
+                            class="produto_text" 
+                            required
+                            autocomplete="off" />
+                        </div>
+                        <br>
+                        <div class="departamento_text">
+                            <label for="sec-secao">Seção</label>
+                            <br>
+                            <input 
+                            class="content-text" 
+                            id="secao" 
+                            name="sec-secao" 
+                            type="text" 
+                            class="produto_text"
+                            required
+                            autocomplete="off" />
+                        </div>
+                        <br>
+                        <div class="departamento_text">
+                            <label for="sec-secao">Grupo</label>
+                            <br>
+                            <input 
+                            class="content-text" 
+                            id="secao" 
+                            name="sec-secao" 
+                            type="text" 
+                            class="produto_text"
+                            required
+                            autocomplete="off" />
+                        </div>
+                        <br>
+                        <div class="secao_text">
+                            <label for="quantidades">Quantidade Conjunto</label>
+                            <br><br>
+                            <select class="content-text" name="quantidades" id="unidade">
+                                <option value="5">5 Unidades</option>
+                                <option value="4">4 Unidades</option>
+                                <option value="3">3 Unidades</option>
+                                <option value="2">2 Unidades</option>
+                                <option value="1">1 Unidade</option>
+                            </select>
+                        </div>
+                        <br>
+                    </div>
+            </div>
+        </section>
+        <!-- Tags de Descrição -->
+        <section> 
+            <div class="container-2">
+                <h1 class="title">Tags de Descrição
+                    <img src="images/down-arrow.png" class="arrow-2" onClick="hiddenSection2()" />
+                </h1>
+                <hr style="height:1px;border-width:0;color:gray;background-color:gray">
+                <div class="line-1 descricao-container-1" id="section2">
+                    <div>
+                        <label>Produto</label>
+                        <br>
+                        <input 
+                        id="produto_descricao" 
+                        class="campo_texto" 
+                        type="text" 
+                        required
+                        autocomplete="off" />
+                    </div>
+                    <div>
+                        <label>Tipo</label>
+                        <br>
+                        <input 
+                        id="tipo_descricao" 
+                        class="campo_texto" 
+                        type="text" 
+                        required
+                        autocomplete="off" />
+                    </div>
+                    <div>
+                        <label>Marca</label>
+                        <br>
+                        <input 
+                        id="marca_descricao" 
+                        class="campo_texto" 
+                        type="text" 
+                        required
+                        autocomplete="off" />
+                    </div>
+                    <div>
+                        <label>Extra</label>
+                        <br>
+                        <input 
+                        id="extra_descricao" 
+                        class="campo_texto" 
+                        type="text" 
+                        required
+                        autocomplete="off"/>
+                    </div>
+                    <div>
+                        <label>Embalagem</label>
+                        <br>
+                        <input 
+                        id="embalagem_descricao" 
+                        class="campo_texto" 
+                        type="text" 
+                        required 
+                        autocomplete="off"/>
+                    </div>
+                    <div>
+                        <label>Gramagem</label>
+                        <br>
+                        <input 
+                        id="gramagem_descricao" 
+                        class="campo_texto" 
+                        type="text" 
+                        required
+                        autocomplete="off" />
+                    </div>
+                    <div class="quant_text">
+                        <label for="aproveite">Gramagem Marketeira</label>
+                        <br>
+                        <select class="content-text" name="aproveite" id="marketeira">
+                            <option value="2">Aproveite</option>
+                            <option value="1">Aproveite</option>
+                        </select>
+                        <br>
+                    </div>
+                    <div class="quant_text">
+                        <label for="familia">Tipo Família</label>
+                        <br>
+                        <select class="content-text" name="familia" id="familia">
+                            <option value="2">Aproveite</option>
+                            <option value="1">Aproveite</option>
+                        </select>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <!-- Selos -->
+        <section>
+            <div class="container-3">
+                <label class="title">Selos</label>
+                <br><br>
+                <hr style="height:1px;border-width:0;color:gray;background-color:gray">
+                <div class="image__check">
+                    <div class="col-1">
+                        <img height="130" width="130" src="./images/img-1.png" alt="primeira-img" />
+                        <input type="checkbox" name="img-1" id="img1">
+                    </div>
+                    <div class="col-1">
+                        <img height="130" width="130" src="./images/img-2.png" alt="segunda-img" />
+                        <input type="checkbox" name="img-1" id="img2">
+                    </div>
+                    <div class="col-1">
+                        <img height="130" width="130" src="./images/img-3.png" alt="terceira-img" />
+                        <input type="checkbox" name="img-1" id="img3">
+                    </div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </section> 
+        <!-- Preço nas Lojas -->
+        <section>
+            <div class="container-3">
+                <label class="title">Preço nas Lojas</label>
+                <br><br>
+                <hr style="height:1px;border-width:0;color:gray;background-color:gray">
+                <div class="container__table">
+                    <table id="myTable">
+                        <thead>
+                            <tr style="background-color:#ff7a00">
+                                <th style="border-top-left-radius: 15px;" scope="col" onClick="sortTable(0)">Loja &#10607;</th>
+                                <th scope="col" onClick="sortTable(1)">Atualizado em &#10607;</th>
+                                <th scope="col" onClick="sortTable(2)">Unidade de Venda &#10607;</th>
+                                <th scope="col" onClick="sortTable(3)">Preço Regular &#10607;</th>
+                                <th scope="col" onClick="sortTable(4)">Preço Promocional &#10607;</th>
+                                <th scope="col" onClick="sortTable(5)">Preço Atacado &#10607;</th>
+                                <th scope="col" onClick="sortTable(6)">Cartão &#10607;</th>
+                                <th style="border-top-right-radius: 15px;" scope="col" onClick="sortTable(7)">Estoque &#10607;</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom: 1px solid gray;">
+                                <td data-label="Loja" class="loja-td">Loja Itapeva</td>
+                                <td data-label="Atualizado Em">05/11/21 04h02</td>
+                                <td data-label="Peso">KG</td>
+                                <td data-label="Preço Regular">R$12,40</td>
+                                <td data-label="Preço Promocional">R$9,50</td>
+                                <td data-label="Preço Atacado">R$9,79</td>
+                                <td data-label="Cartão">R$10,50</td>
+                                <td data-label="Estoque">42</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid gray;">
+                                <td scope="row" data-label="Loja"  class="loja-td highlight">Loja Vila Coral</td>
+                                <td class="highlight" data-label="Atualizado Em">04/11/21 18h57</td>
+                                <td class="highlight" data-label="Peso">KG</td>
+                                <td class="highlight" data-label="Preço Regular">R$12,40</td>
+                                <td class="highlight" data-label="Preço Promocional">R$9,50</td>
+                                <td class="highlight" data-label="Preço Atacado">R$9,79</td>
+                                <td class="highlight" data-label="Cartão">R$10,50</td>
+                                <td class="highlight" data-label="Estoque">18</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid gray">
+                                <td scope="row" data-label="Loja" class="loja-td">Loja Vila Girassol</td>
+                                <td data-label="Atualizado Em">05/11/22 10h23</td>
+                                <td data-label="Peso">KG</td>
+                                <td data-label="Preço Regular">R$12,40</td>
+                                <td data-label="Preço Promocional">R$9,50</td>
+                                <td data-label="Preço Atacado">R$9,79</td>
+                                <td data-label="Cartão">R$10,50</td>
+                                <td data-label="Estoque">21</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <!-- Imagem do Produto -->
+       <section>
+            <div class="container-5">
+                <label class="title">Imagem do Produto</label>
+                <br><br>
+                <hr style="height:1px;border-width:0;color:gray;background-color:gray">
+                <div class="content-select-image">
+                    <img id="image-select" height="150" width="150" src="./images/backgroundImg.png" alt="your image"
+                        style="border: 1px solid #ddd" />
+                    <div class="content-select">
+                        <label>Arquivo</label>
+                        <input type="file" id="img" name="img" onchange="readURL(this);" class="insert-image"
+                            accept="image/*">
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <div class="button-container">
+            <input class="button__form" type="submit" value="Adicionar" id="form-submit"></input>
+        </div>
+        </form>
+        <button class="button__message">
+            <img src="./images/message.svg" height="20" width="20" alt="icon-message" />
+        </button>
+    </main>
+
+    <script src="./js/index.js"></script>
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+</body>
+
+</html>
