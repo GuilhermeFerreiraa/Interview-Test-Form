@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap");
+
 /* ============== Google Fonts ==============  */
 
 body {
     background-color: #f2f2f2;
-    font-family: 'Open Sans', 'Helvetica Neue';
+    font-family: "Open Sans", "Helvetica Neue";
 }
+
 
 /* ========== header  ========= */
 
@@ -20,9 +22,9 @@ header {
     align-items: center;
     width: 67%;
     margin: 0 auto;
-  }
-  
-  .navbar a {
+}
+
+.navbar a {
     float: left;
     display: block;
     color: #f2f2f2;
@@ -30,39 +32,40 @@ header {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-  }
-  
-  .navbar a:hover {
-    color: #fff;
-  }
-  
-  .navbar .icon {
-    display: none;
-    transition: .5s;
-  }
+}
 
-  /* ========== fim header  ========= */
+.navbar a:hover {
+    color: #fff;
+}
+
+.navbar .icon {
+    display: none;
+    transition: 0.5s;
+}
+
+
+/* ========== fim header  ========= */
+
 
 /* ========== main  ========= */
 
- .title{
+.title {
     font-size: 24px;
     font-weight: 400;
     margin: 0 0 10px;
 }
 
-
-.btn{
+.btn {
     background-color: transparent;
     border: none;
     cursor: pointer;
     height: 100%;
     width: 20px;
-    transition: .5s;
+    transition: 0.5s;
     -webkit-tap-highlight-color: transparent;
-
 }
-.arrow-2{
+
+.arrow-2 {
     border: none;
     cursor: pointer;
     height: 20px;
@@ -70,10 +73,11 @@ header {
     -webkit-tap-highlight-color: transparent;
 }
 
+
 /* ========== SECTION 1 ========= */
 
-.container-1{
-    transition: .5s;
+.container-1 {
+    transition: 0.5s;
     padding: 32px;
     border: 2px solid #cacaca;
     border-radius: 10px;
@@ -82,7 +86,8 @@ header {
     width: 65%;
     height: 280px;
 }
-.container-1 .secao_text select{
+
+.container-1 .secao_text select {
     width: 100%;
     border-radius: 16px;
     border: 1px solid #000;
@@ -90,7 +95,7 @@ header {
     -webkit-appearance: none;
     -moz-appearance: none;
     background: transparent;
-    background-image: url('../images/arrow.svg');
+    background-image: url("../images/arrow.svg");
     background-size: 12px;
     background-repeat: no-repeat;
     background-position-x: 90%;
@@ -98,14 +103,17 @@ header {
     color: #797979;
 }
 
-    /* ========== form - 1 ========= */
-.container-1 .form-1 .produto_text label{
+
+/* ========== form - 1 ========= */
+
+.container-1 .form-1 .produto_text label {
     font-size: medium;
-    font-weight: bold;   
+    font-weight: bold;
     margin-top: 10px;
     padding-left: 15px;
 }
-.container-1 .form-1 .produto_text input{
+
+.container-1 .form-1 .produto_text input {
     width: 350px;
     border-radius: 16px;
     border: 1px solid #000;
@@ -113,114 +121,142 @@ header {
     margin-top: 10px;
 }
 
-.container-1 .form-1 .descricao_text label{
+.container-1 .form-1 .descricao_text label {
     font-size: medium;
-    font-weight: bold;   
+    font-weight: bold;
     margin-top: 10px;
     padding-left: 15px;
 }
-.container-1 .form-1 .descricao_text input{
+
+.container-1 .form-1 .descricao_text input {
     width: 515px;
     border-radius: 16px;
     border: 1px solid #000;
     padding: 10px 16px;
     margin-top: 10px;
 }
-    /* ====== line-1 ======= */
 
-.line-1{
+
+/* ====== line-1 ======= */
+
+.line-1 {
     gap: 20px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     height: 70px;
 }
-    /* ====== fim line-1 ======= */
 
-    /* ====== line-2 ======= */
-.line-2{
+
+/* ====== fim line-1 ======= */
+
+
+/* ====== line-2 ======= */
+
+.line-2 {
     margin-top: 16px;
     gap: 15px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
-    /* ===== departamento ===== */
 
-.container-1 .form-1 .departamento_text label{
+
+/* ===== departamento ===== */
+
+.container-1 .form-1 .departamento_text label {
     font-size: medium;
-    font-weight: bold;   
+    font-weight: bold;
     margin-top: 10px;
     padding-left: 15px;
 }
-.container-1 .form-1 .departamento_text input{
+
+.container-1 .form-1 .departamento_text input {
     width: 250px;
     border-radius: 16px;
     border: 1px solid #000;
     padding: 10px 16px;
     margin-top: 10px;
 }
-    /* ===== departamento fim ===== */
 
-    /* ===== secao ===== */
 
-.container-1 .form-1 .secao_text label{
+/* ===== departamento fim ===== */
+
+
+/* ===== secao ===== */
+
+.container-1 .form-1 .secao_text label {
     font-size: medium;
-    font-weight: bold;   
+    font-weight: bold;
     margin-top: 10px;
     padding-left: 15px;
 }
-.container-1 .form-1 .secao_text input{
+
+.container-1 .form-1 .secao_text input {
     width: 210px;
     border-radius: 16px;
     border: 1px solid #000;
     padding: 10px 16px;
     margin-top: 10px;
 }
+
+
 /* ===== fim secao ===== */
+
 
 /* ===== grupo ===== */
 
-.container-1 .form-1 .grupo_text label{
+.container-1 .form-1 .grupo_text label {
     font-size: medium;
-    font-weight: bold;   
+    font-weight: bold;
     margin-top: 10px;
     padding-left: 15px;
 }
 
-.container-1 .form-1 .grupo_text input{
+.container-1 .form-1 .grupo_text input {
     width: 215px;
     border-radius: 16px;
     border: 1px solid #000;
     padding: 10px 16px;
     margin-top: 10px;
 }
- 
-    /* ===== fim grupo ===== */
-    /* ===== quantidade ===== */
 
-.container-1 .form-1 .quant_text label{
+
+/* ===== fim grupo ===== */
+
+
+/* ===== quantidade ===== */
+
+.container-1 .form-1 .quant_text label {
     font-size: medium;
-    font-weight: bold;   
+    font-weight: bold;
     margin-top: 10px;
     padding-left: 15px;
 }
 
-
-select:hover{
+select:hover {
     cursor: pointer;
 }
- /* ===== fim quantidade ===== */
+
+
+/* ===== fim quantidade ===== */
+
 
 /* ====== fim line-2 ======= */
 
-    /* ========== fim form - 1 ========= */
+
+/* ========== fim form - 1 ========= */
+
+
 /*
 ============================================ 
 */
-    /* ========== SECTION 2  ========= */
-.container-2{
-    transition: .5s;
+
+
+/* ========== SECTION 2  ========= */
+
+.container-2 {
+    transition: 0.5s;
     padding: 32px;
     border: 2px solid #cacaca;
     border-radius: 10px;
@@ -230,7 +266,9 @@ select:hover{
     height: 10%;
 }
 
-    /* ===== line 1 ===== */
+
+/* ===== line 1 ===== */
+
 .container-2 .line-1 {
     width: 100%;
     display: grid;
@@ -238,45 +276,53 @@ select:hover{
     margin-top: 15px;
     height: 10%;
 }
-.container-2 .line-1 label{
+
+.container-2 .line-1 label {
     font-size: medium;
-    font-weight: bold;   
+    font-weight: bold;
     padding-top: 15px;
     padding-left: 15px;
 }
-.container-2 .line-1 input{
+
+.container-2 .line-1 input {
     width: 290px;
     border-radius: 16px;
     border: 1px solid #000;
     padding: 10px 16px;
     margin-top: 10px;
 }
-.container-2 .line-1 input{
+
+.container-2 .line-1 input {
     width: 100%;
     border-radius: 16px;
     border: 1px solid #000;
     padding: 10px 16px;
     margin-top: 10px;
 }
+
+
 /* ===== line-1 fim ===== */
 
-.descricao-container{
+.descricao-container {
     gap: 20px;
     margin-top: 5px;
 }
-.container-2 .descricao-container label{
+
+.container-2 .descricao-container label {
     font-size: medium;
-    font-weight: bold;   
+    font-weight: bold;
     padding-left: 15px;
 }
-.container-2 .descricao-container input{
+
+.container-2 .descricao-container input {
     width: 300px;
     border-radius: 16px;
     border: 1px solid #000;
     padding: 10px 16px;
     margin-top: 10px;
 }
-.container-2 select{
+
+.container-2 select {
     width: 95%;
     border-radius: 16px;
     border: 1px solid #000;
@@ -289,14 +335,17 @@ select:hover{
     background-repeat: no-repeat;
     background-position-x: 90%;
     background-position-y: 50%;
-    color:#797979;
+    color: #797979;
     margin-top: 10px;
 }
 
+
 /* ===== line-2 fim ===== */
 
+
 /* ========== SECTION 3  ========= */
-.container-3{
+
+.container-3 {
     padding: 32px 32px 15px;
     border: 2px solid #cacaca;
     border-radius: 10px;
@@ -305,8 +354,8 @@ select:hover{
     width: 65%;
     height: 10%;
 }
-    
-.image__check{
+
+.image__check {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
@@ -315,7 +364,7 @@ select:hover{
     margin: 0;
 }
 
-.image__check .col-1{
+.image__check .col-1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -324,8 +373,10 @@ select:hover{
     margin: 20px 15px;
 }
 
+
 /* ========== SECTION 4  ========= */
-    .container-4{
+
+.container-4 {
     padding: 32px;
     border: 2px solid #cacaca;
     border-radius: 10px;
@@ -335,7 +386,7 @@ select:hover{
     height: 10%;
 }
 
-.container__table{
+.container__table {
     width: 100%;
     border-start-start-radius: 20px;
     border-start-end-radius: 20px;
@@ -349,32 +400,41 @@ table {
     width: 100%;
     table-layout: fixed;
 }
-  
-  table tr {
+
+table tr {
     background-color: #ffffff;
-    padding: .35em;
+    padding: 0.35em;
 }
-  
-  table th,
-  table td {
-    padding: .625em;
+
+table th,
+table td {
+    padding: 0.625em;
     text-align: center;
 }
-  
-  table th {
+
+table th {
     color: #fff;
     font-size: 15px;
 }
+
+
 /* ============ line Highlight ============ */
-.highlight{
-    background-color:#fff2e6 !important;
+
+.highlight {
+    background-color: #fff2e6 !important;
 }
-.loja-td{
-    color:#d66902;
+
+.loja-td {
+    color: #d66902;
 }
+
+
 /* ============ end line Highlight ============ */
+
+
 /* ============ SECTION 5  ============ */
-.container-5{
+
+.container-5 {
     padding: 32px;
     border: 2px solid #cacaca;
     border-radius: 10px;
@@ -383,21 +443,25 @@ table {
     width: 65%;
     height: 280px;
 }
-.content-select-image{
+
+.content-select-image {
     margin-top: 15px;
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
 }
+
 .content-select-image .content-select {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.content-select-image label{
+
+.content-select-image label {
     font-weight: bold;
 }
-.insert-image::-webkit-file-upload-button{
+
+.insert-image::-webkit-file-upload-button {
     padding: 7px 10px;
     border: 1px solid #646464;
     border-radius: 20px;
@@ -406,12 +470,13 @@ table {
     background-color: #efefef;
     cursor: pointer;
 }
-.button-container{
-    width: 100%;
 
+.button-container {
+    width: 100%;
 }
-.button__form{
-    background-image: linear-gradient(to right, #ff7c00 , #ffa100);
+
+.button__form {
+    background-image: linear-gradient(to right, #ff7c00, #ffa100);
     padding: 12px 45px;
     color: #fff;
     border-radius: 20px;
@@ -421,8 +486,11 @@ table {
     margin-left: 17.5%;
     margin-bottom: 15px;
 }
+
+
 /* ========== FIM SECTION 5  ========= */
-.button__message{
+
+.button__message {
     height: 50px;
     width: 50px;
     background-color: #ff7a00;
@@ -435,56 +503,63 @@ table {
     -webkit-tap-highlight-color: transparent;
     box-shadow: 2px 2px 5px #646464;
 }
+
+
 /* ========= fim main =========  */
 
 
 /* =========== Responsive Mode =========== */
 
-/* NAVBAR */
-@media screen and (min-width:200px) and (max-width: 800px) {
-.navbar a:not(:first-child) {
-    display: none;
-}
-.navbar a.icon {
-    float: right;
-    display: block;
-    font-size: 25px;
-    font-size: 30px;
-    margin: 5px 10px;
-    -webkit-tap-highlight-color: transparent;
-}
-.navbar{
-    overflow: hidden;
-    background-color: #0c262a;
-    display: block;
-    width: 100%;
-}
 
-}
-@media screen and (min-width:200px) and (max-width: 1200px){
-.navbar.responsive {
-    position: relative;
-}
-.navbar.responsive .icon {
-    position: absolute;
-    transition: .5s;
-    right: 0;
-    top: 0;
-}
-.navbar.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
+/* NAVBAR */
+
+@media screen and (min-width: 200px) and (max-width: 800px) {
+    .navbar a:not(:first-child) {
+        display: none;
+    }
+    .navbar a.icon {
+        float: right;
+        display: block;
+        font-size: 25px;
+        font-size: 30px;
+        margin: 5px 10px;
+        -webkit-tap-highlight-color: transparent;
+    }
+    .navbar {
+        overflow: hidden;
+        background-color: #0c262a;
+        display: block;
+        width: 100%;
     }
 }
+
+@media screen and (min-width: 200px) and (max-width: 1200px) {
+    .navbar.responsive {
+        position: relative;
+    }
+    .navbar.responsive .icon {
+        position: absolute;
+        transition: 0.5s;
+        right: 0;
+        top: 0;
+    }
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+
 /* END NAVBAR */
 
+
 /* TABLE */
-@media screen and  (min-width:200px) and (max-width: 900px)  {
+
+@media screen and (min-width: 200px) and (max-width: 900px) {
     table {
         border: 0;
     }
-
     table thead {
         border: none;
         clip: rect(0 0 0 0);
@@ -495,65 +570,64 @@ table {
         position: absolute;
         width: 1px;
     }
-
     table tr {
         display: block;
-        margin-bottom: .625em;
+        margin-bottom: 0.625em;
     }
     table td {
         display: block;
         font-size: 15px;
         text-align: right;
     }
-
     table td::before {
         content: attr(data-label);
         float: left;
         font-weight: bold;
         text-transform: uppercase;
     }
-
     table td:last-child {
         border-bottom: 0;
     }
-
-    .container__table{
+    .container__table {
         margin-left: 0;
         width: 100%;
     }
 }
- /* END TABLE */
 
-@media screen and  (max-width:650px)  {
-    .container-1, .container-2, .container-3, .container-5{
+
+/* END TABLE */
+
+@media screen and (max-width: 650px) {
+    .container-1,
+    .container-2,
+    .container-3,
+    .container-5 {
         width: 95%;
         height: 10%;
         margin: 16px auto;
-        transition: .5s;
+        transition: 0.5s;
     }
-    .container-1 .form-1 .produto_text input{
+    .container-1 .form-1 .produto_text input {
         width: 100%;
     }
-    .container-1 .form-1 .descricao_text input{
+    .container-1 .form-1 .descricao_text input {
         width: 100%;
     }
-    .container-1 .form-1 .departamento_text input{
+    .container-1 .form-1 .departamento_text input {
         width: 100%;
     }
-    .container-1 .form-1 .secao_text input{
+    .container-1 .form-1 .secao_text input {
         width: 100%;
     }
-    .container-1 .form-1 .grupo_text input{
+    .container-1 .form-1 .grupo_text input {
         width: 100%;
     }
-    .container-1 .form-1 .quant_text select{
+    .container-1 .form-1 .quant_text select {
         width: 100%;
     }
-
-    .quant_text{
+    .quant_text {
         margin-top: 15px;
     }
-
     .line-1 {
         gap: 10px;
         display: block;
@@ -562,51 +636,54 @@ table {
         display: block;
         margin: 90px auto 0;
     }
-    .container-2 .line-1{
+    .container-2 .line-1 {
         grid-template-columns: 1fr;
     }
-    .content-select{
+    .content-select {
         width: 100%;
     }
-    .content-select-image{
+    .content-select-image {
         justify-content: center;
     }
-    .image__check{
+    .image__check {
         grid-template-columns: 1fr 1fr;
         justify-content: center;
         align-items: center;
         width: 100%;
     }
-
-    .button__form{
+    .button__form {
         margin-left: 5%;
         -webkit-tap-highlight-color: transparent;
     }
-    .container-2 .line-1 input{
-        width:100%;
+    .container-2 .line-1 input {
+        width: 100%;
     }
 }
-@media screen and (min-width: 600px) and (max-width: 650px){
-    .image__check{
+
+@media screen and (min-width: 600px) and (max-width: 650px) {
+    .image__check {
         grid-template-columns: 1fr 1fr;
     }
 }
- /* ======= IPhone X  & Moto G4  ======= */
-@media screen and (min-width: 320px) and (max-width: 450px){
-    .container-1 .form-1 .quant_text select{
+
+
+/* ======= IPhone X  & Moto G4  ======= */
+
+@media screen and (min-width: 320px) and (max-width: 450px) {
+    .container-1 .form-1 .quant_text select {
         width: 100%;
     }
-    .container-1 .form-1 input{
+    .container-1 .form-1 input {
         width: 100%;
     }
-    .quant_text{
+    .quant_text {
         margin: 0;
         width: 100%;
     }
-    .secao_text{
+    .secao_text {
         width: 100%;
     }
-    .image__check .col-1 img{
+    .image__check .col-1 img {
         width: 100px;
         height: 100px;
     }
@@ -618,12 +695,15 @@ table {
         gap: 15px;
         margin: 10px 15px;
     }
-    .button__message{
+    .button__message {
         right: 5%;
     }
 }
- /* ======= Galaxy Fold =======*/
- @media screen and (max-width: 320px){
+
+
+/* ======= Galaxy Fold =======*/
+
+@media screen and (max-width: 320px) {
     .image__check {
         grid-template-columns: 1fr;
         margin: 0 auto;
@@ -634,38 +714,41 @@ table {
     table td {
         font-size: 0.9em;
     }
-    .title{
+    .title {
         font-size: 20px;
     }
-    .quant_text{
+    .quant_text {
         margin: 10px 0 0;
     }
 }
 
-@media screen and (max-width: 451px){
-    .container-2 select{
+
+/* ======= End  Galaxy Fold =======*/
+
+@media screen and (max-width: 451px) {
+    .container-2 select {
         width: 100%;
     }
-    .image__check .col-1 img{
+    .image__check .col-1 img {
         width: 130px;
         height: 130px;
     }
     .image__check {
         grid-template-columns: 1fr;
     }
-    .button__message{
+    .button__message {
         right: 5%;
     }
-    .container-1 .form-1 .quant_text select{
+    .container-1 .form-1 .quant_text select {
         width: 100%;
     }
-    table td{
+    table td {
         font-size: 0.95em;
     }
 }
 
 @media screen and (max-width: 419px) {
-    .image__check .col-1 img{
+    .image__check .col-1 img {
         width: 130px;
         height: 130px;
     }
@@ -673,123 +756,134 @@ table {
         grid-template-columns: 1fr;
     }
 }
+
+
 /* Portrait Orientation ON */
+
 @media screen and (min-width: 717px) and (max-width: 1000px) {
-    .container-3{
-        grid-template-columns: repeat(3,1fr);
+    .container-3 {
+        grid-template-columns: repeat(3, 1fr);
         justify-content: center;
         align-items: center;
         width: 95%;
     }
-    .image__check{
+    .image__check {
         width: 100%;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
-    .container-1 .form-1 .descricao_text input{
+    .container-1 .form-1 .descricao_text input {
         width: 100%;
     }
-    .container-1, .container-2{
+    .container-1,
+    .container-2 {
         height: 10%;
         width: 95%;
     }
-    .container-2 .line-1{
+    .container-2 .line-1 {
         grid-template-columns: 1fr 1fr;
         margin: 16px auto;
         gap: 15px;
     }
-    .container-2 select{
+    .container-2 select {
         width: 100%;
     }
-    .content .produto{
+    .content .produto {
         width: 100%;
     }
-    .container-5{
+    .container-5 {
         width: 95%;
     }
-    .container-2 .line-1 input{
+    .container-2 .line-1 input {
         width: 100%;
     }
-    .button__form{
+    .button__form {
         margin-left: 3%;
     }
-    .button__message{
+    .button__message {
         right: 3%;
     }
-    table td{
+    table td {
         font-size: 15px;
     }
-    .line-1{
+    .line-1 {
         display: grid;
         grid-template-columns: 1fr 0fr 1fr 0fr;
         gap: 0px;
     }
-    .descricao_text{
+    .descricao_text {
         width: 100%;
     }
-    .produto_text{
+    .produto_text {
         width: 100%;
     }
-    .container-1 .form-1 .produto_text input{
+    .container-1 .form-1 .produto_text input {
         width: 95%;
     }
-    .container-1 .form-1 .quant_text select{
-        width: 100%;   
+    .container-1 .form-1 .quant_text select {
+        width: 100%;
     }
-    .departamento_text{
+    .departamento_text {
         width: 48%;
     }
-    .container-1 .form-1 .secao_text input{
+    .container-1 .form-1 .secao_text input {
         width: 100%;
     }
-    .secao_text{
+    .secao_text {
         width: 50%;
     }
-    .container-1 .form-1 .departamento_text input{
+    .container-1 .form-1 .departamento_text input {
         width: 100%;
     }
-    .grupo_text{
-        width: 100%;   
-    }
-    .container-1 .form-1 .grupo_text input{
+    .grupo_text {
         width: 100%;
     }
-    .quant_text{
+    .container-1 .form-1 .grupo_text input {
         width: 100%;
     }
-    .line-2{
+    .quant_text {
+        width: 100%;
+    }
+    .line-2 {
         margin-top: 16px;
         gap: 6px;
         display: flex;
         align-items: center;
         flex-wrap: wrap;
     }
-    .navbar{
+    .navbar {
         width: 95%;
     }
 }
+
+
 /* ======== Nest Hub Max ========  */
+
 @media screen and (min-width: 1000px) and (max-width: 1280px) {
-    .container-1, .container-2, .container-3, .container-4, .container-5 {
+    .container-1,
+    .container-2,
+    .container-3,
+    .container-4,
+    .container-5 {
         height: 10%;
         width: 80%;
     }
-    .produto_text{
+    .produto_text {
         width: 100%;
     }
-    .descricao_text{
+    .descricao_text {
         width: 100%;
     }
-    .container-1 .form-1 .descricao_text input{
+    .container-1 .form-1 .descricao_text input {
         width: 100%;
     }
-    .line-1{
+    .line-1 {
         gap: 0px;
         height: 190px;
     }
-    .container-1 .form-1 .produto_text input{
+    .container-1 .form-1 .produto_text input {
         width: 100%;
     }
-    .container-2 .line-1{
+    .container-2 .line-1 {
         width: 100%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -797,35 +891,36 @@ table {
         gap: 20px;
         height: 10%;
     }
-    .quant_text input{
+    .quant_text input {
         width: 100%;
     }
-    .container-2 select{
+    .container-2 select {
         width: 100%;
     }
-    .image__check{
-        grid-template-columns: repeat(3,1fr);
+    .image__check {
+        grid-template-columns: repeat(3, 1fr);
         margin: 0 auto;
         width: 100%;
     }
-    table td{
+    table td {
         display: block;
         font-size: 0.99em;
         text-align: right;
     }
-    .navbar{
+    .navbar {
         width: 85%;
     }
-    .button__form{
+    .button__form {
         margin-left: 10.5%;
     }
-    .button__message{
+    .button__message {
         right: 4%;
     }
-    .line-2{
+    .line-2 {
         column-gap: 3px;
         justify-content: flex-start;
     }
 }
+
 
 /* ======== END RESPONSIVE MODE ======== */
