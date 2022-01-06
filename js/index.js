@@ -28,10 +28,11 @@ function hiddenSection(){
     line1.style.display === "none" && line2.style.display === "none" &&
     icon.style.display != 'none'
    ) {
-     line1.style.display = "grid";
+     line1.style.display = "flex";
      line1.style.gap = "0px";
-     line2.style.display = "grid";
-     line2.style.gap = "0px";
+     line2.style.display = "flex";
+     line2.style.columnGap = "3px";
+     line2.style.justifyContent = "flex-start"
 
     arrow.style.transform = "rotate(-180deg)";
   

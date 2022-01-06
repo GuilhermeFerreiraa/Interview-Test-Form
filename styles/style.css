@@ -145,7 +145,6 @@ header {
     align-items: center;
     flex-wrap: wrap;
 }
-
     /* ===== departamento ===== */
 
 .container-1 .form-1 .departamento_text label{
@@ -252,9 +251,14 @@ select:hover{
     padding: 10px 16px;
     margin-top: 10px;
 }
+.container-2 .line-1 input{
+    width: 100%;
+    border-radius: 16px;
+    border: 1px solid #000;
+    padding: 10px 16px;
+    margin-top: 10px;
+}
 /* ===== line-1 fim ===== */
-
-/* ===== line 2 ===== */
 
 .descricao-container{
     gap: 20px;
@@ -288,13 +292,7 @@ select:hover{
     color:#797979;
     margin-top: 10px;
 }
-.container-2 .line-1 input{
-    width: 100%;
-    border-radius: 16px;
-    border: 1px solid #000;
-    padding: 10px 16px;
-    margin-top: 10px;
-}
+
 /* ===== line-2 fim ===== */
 
 /* ========== SECTION 3  ========= */
@@ -350,31 +348,32 @@ table {
     padding: 0;
     width: 100%;
     table-layout: fixed;
-  }
+}
   
   table tr {
     background-color: #ffffff;
     padding: .35em;
-  }
+}
   
   table th,
   table td {
     padding: .625em;
     text-align: center;
-  }
+}
   
   table th {
     color: #fff;
     font-size: 15px;
-  }
+}
+/* ============ line Highlight ============ */
 .highlight{
     background-color:#fff2e6 !important;
 }
 .loja-td{
     color:#d66902;
 }
-
-/* ========== SECTION 5  ========= */
+/* ============ end line Highlight ============ */
+/* ============ SECTION 5  ============ */
 .container-5{
     padding: 32px;
     border: 2px solid #cacaca;
@@ -384,14 +383,12 @@ table {
     width: 65%;
     height: 280px;
 }
-
 .content-select-image{
     margin-top: 15px;
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
 }
-
 .content-select-image .content-select {
     display: flex;
     flex-direction: column;
@@ -409,12 +406,10 @@ table {
     background-color: #efefef;
     cursor: pointer;
 }
-
 .button-container{
     width: 100%;
 
 }
-
 .button__form{
     background-image: linear-gradient(to right, #ff7c00 , #ffa100);
     padding: 12px 45px;
@@ -440,10 +435,13 @@ table {
     -webkit-tap-highlight-color: transparent;
     box-shadow: 2px 2px 5px #646464;
 }
-
 /* ========= fim main =========  */
 
-/* =========== responsive mode =========== */
+
+
+
+/* =========== Responsive Mode =========== */
+
 /* NAVBAR */
 @media screen and (min-width:200px) and (max-width: 800px) {
 .navbar a:not(:first-child) {
@@ -483,6 +481,51 @@ table {
 }
 /* END NAVBAR */
 
+/* TABLE */
+@media screen and  (min-width:200px) and (max-width: 900px)  {
+    table {
+        border: 0;
+    }
+
+    table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    table tr {
+        display: block;
+        margin-bottom: .625em;
+    }
+    table td {
+        display: block;
+        font-size: 1rem;
+        text-align: right;
+    }
+
+    table td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    table td:last-child {
+        border-bottom: 0;
+    }
+
+    .container__table{
+        margin-left: 0;
+        width: 100%;
+    }
+}
+ /* END TABLE */
+ 
 @media screen and  (max-width:650px)  {
     .container-1, .container-2, .container-3, .container-5{
         width: 95%;
@@ -545,65 +588,17 @@ table {
         width:100%;
     }
 }
-
-@media screen and (max-width: 650px){
+@media screen and (min-width: 600px) and (max-width: 650px){
     .image__check{
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
-}
-
-/* ================= Table =================== */
-
-@media screen and  (min-width:200px) and (max-width: 900px)  {
-table {
-    border: 0;
-}
-
-table caption {
-    font-size: 1.3em;
-}
-
-table thead {
-    border: none;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-table tr {
-    display: block;
-    margin-bottom: .625em;
-}
-table td {
-    display: block;
-    font-size: 1rem;
-    text-align: right;
-}
-
-table td::before {
-    content: attr(data-label);
-    float: left;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-table td:last-child {
-    border-bottom: 0;
-}
-
-.container__table{
-    margin-left: 0;
-    width: 100%;
-}
-
 }
  /* ======= IPhone X  & Moto G4  ======= */
 @media screen and (min-width: 320px) and (max-width: 450px){
     .container-1 .form-1 .quant_text select{
+        width: 100%;
+    }
+    .container-1 .form-1 input{
         width: 100%;
     }
     .quant_text{
@@ -629,6 +624,25 @@ table td:last-child {
         right: 5%;
     }
 }
+ /* ======= Galaxy Fold =======*/
+ @media screen and (max-width: 320px){
+    .image__check {
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+    }
+    .image__check .col-1 {
+        margin: 10px auto;
+    }
+    table td {
+        font-size: 0.9em;
+    }
+    .title{
+        font-size: 20px;
+    }
+    .quant_text{
+        margin: 10px 0 0;
+    }
+}
 
 @media screen and (max-width: 451px){
     .container-2 select{
@@ -651,25 +665,6 @@ table td:last-child {
         font-size: 0.95em;
     }
 }
- /* ======= Galaxy Fold =======*/
-@media screen and (max-width: 320px){
-    .image__check {
-        grid-template-columns: 1fr;
-        margin: 0 auto;
-    }
-    .image__check .col-1 {
-        margin: 10px auto;
-    }
-    table td {
-        font-size: 0.9em;
-    }
-    .title{
-        font-size: 20px;
-    }
-    .quant_text{
-        margin: 10px 0 0;
-    }
-}
 
 @media screen and (max-width: 419px) {
     .image__check .col-1 img{
@@ -677,10 +672,10 @@ table td:last-child {
         height: 130px;
     }
     .image__check {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 }
-
+/* Portrait Orientation ON */
 @media screen and (min-width: 717px) and (max-width: 1000px) {
     .container-3{
         grid-template-columns: repeat(3,1fr);
@@ -690,7 +685,7 @@ table td:last-child {
     }
     .image__check{
         width: 100%;
-    grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3,1fr);
     }
     .container-1 .form-1 .descricao_text input{
         width: 100%;
@@ -751,7 +746,6 @@ table td:last-child {
     .secao_text{
         width: 50%;
     }
-
     .container-1 .form-1 .departamento_text input{
         width: 100%;
     }
@@ -775,10 +769,8 @@ table td:last-child {
         width: 95%;
     }
 }
-
 /* ======== Nest Hub Max ========  */
-
-@media screen and (min-width: 1024px) and (max-width: 1280px) {
+@media screen and (min-width: 1000px) and (max-width: 1280px) {
     .container-1, .container-2, .container-3, .container-4, .container-5 {
         height: 10%;
         width: 80%;
@@ -831,5 +823,9 @@ table td:last-child {
     }
     .button__message{
         right: 4%;
+    }
+    .line-2{
+        column-gap: 3px;
+        justify-content: flex-start;
     }
 }
