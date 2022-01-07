@@ -352,7 +352,6 @@ table th {
 }
 /* =========== Responsive Mode =========== */
 
-
 /* NAVBAR */
 @media screen and (min-width: 200px) and (max-width: 800px) {
     .navbar a:not(:first-child) {
@@ -411,7 +410,7 @@ table th {
     }
     table td {
         display: block;
-        font-size: 15px;
+        font-size: 14px;
         text-align: right;
     }
     table td::before {
