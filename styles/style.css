@@ -133,8 +133,8 @@ div .item-6 select{
     padding: 8px 16px;
     -webkit-appearance: none;
     background: transparent;
-    background-image: url("../assets/images/arrow.svg");
-    background-size: 12px;
+    background-image: url("../images/down-arrow.png");
+    background-size: 16px;
     background-repeat: no-repeat;
     background-position-x: 90%;
     background-position-y: 50%;
@@ -184,8 +184,8 @@ div .item-6 select{
     padding: 8px 16px;
     -webkit-appearance: none;
     background: transparent;
-    background-image: url("../assets/images/arrow.svg");
-    background-size: 12px;
+    background-image: url("../images/down-arrow.png");
+    background-size: 16px;
     background-repeat: no-repeat;
     background-position-x: 90%;
     background-position-y: 50%;
