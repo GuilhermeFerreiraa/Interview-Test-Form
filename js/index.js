@@ -5,12 +5,10 @@ function responsive() {
     if (nav.className === "navbar") {
         icon.classList.remove("fa-bars");
         icon.classList.add("fa-times");
-        icon.style.transition = ".5s";
         nav.className += " responsive";
     } else {
         nav.className = "navbar";
         icon.classList.add("fa-bars");
-        icon.style.transition = ".5s";
     }
 }
 
@@ -43,7 +41,7 @@ function hiddenSection2() {
         sectionContainer2.style.transition = ".5s";
         firstSection.style.display = "grid";
         arrow2.style.transform = "rotate(-180deg)";
-    } 
+    }
     else {
         sectionContainer2.style.height = "10%";
         firstSection.style.display = "none";
@@ -54,15 +52,8 @@ function hiddenSection2() {
 
 // ========== table order =============
 function sortTable(n) {
-    var table,
-        rows,
-        switching,
-        i,
-        x,
-        y,
-        shouldSwitch,
-        dir,
-        switchcount = 0;
+    var table, rows, switching, i, x, y,
+        shouldSwitch, dir, switchcount = 0;
     table = document.getElementById("myTable");
     switching = true;
     dir = "asc";
@@ -98,7 +89,7 @@ function sortTable(n) {
     }
 }
 // ========= select image =============
-var loadFile = function(event) {
-	var image = document.getElementById('output');
-	image.src = URL.createObjectURL(event.target.files[0]);
+var loadFile = function (event) {
+    var image = document.getElementById('output');
+    image.src = URL.createObjectURL(event.target.files[0]);
 };
