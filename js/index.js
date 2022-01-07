@@ -18,51 +18,38 @@ function responsive() {
 // ========== hidden section =============
 
 function hiddenSection() {
-    let line1 = document.getElementById("section-1");
-    let line2 = document.getElementById("section-1-2");
+    let firstItem = document.querySelector("#first-items");
+    let secondItem = document.querySelector("#second-items");
     let arrow = document.querySelector(".btn");
     let sectionContainer = document.querySelector(".container-1");
-    if (
-        line1.style.display === "none" &&
-        line2.style.display === "none" &&
-        icon.style.display != "none"
-    ) {
-        line1.style.display = "flex";
-        line1.style.gap = "0px";
-        line2.style.display = "flex";
-        line2.style.columnGap = "3px";
-        line2.style.justifyContent = "flex-start";
 
+    if (firstItem.style.display === "none" && secondItem.style.display === "none") {
+        firstItem.style.display = "flex";
+        secondItem.style.display = "grid";
         arrow.style.transform = "rotate(-180deg)";
     } else {
         sectionContainer.style.height = "10%";
-        line1.style.display = "none";
-        line2.style.display = "none";
-
-        arrow.style.transition = ".3s";
+        firstItem.style.display = "none";
+        secondItem.style.display = "none";
         arrow.style.transform = "rotate(0deg)";
     }
 }
 
 function hiddenSection2() {
-    var line = document.getElementById("section2");
+    var firstSection = document.querySelector("#second-section");
     var arrow2 = document.querySelector(".arrow-2");
     var sectionContainer2 = document.querySelector(".container-2");
 
-    if (line.style.display === "none") {
-        sectionContainer2.style.height = "10%";
-
-        line.style.display = "grid";
-
-        line.style.transition = ".5s";
-
+    if (firstSection.style.display == "none") {
+        sectionContainer2.style.height = "100%";
+        sectionContainer2.style.transition = ".5s";
+        firstSection.style.display = "grid";
         arrow2.style.transform = "rotate(-180deg)";
-    } else {
+    } 
+    else {
         sectionContainer2.style.height = "10%";
-
-        line.style.display = "none";
-
-        arrow2.style.transition = ".3s";
+        firstSection.style.display = "none";
+        arrow2.style.transition = ".5s";
         arrow2.style.transform = "rotate(0deg)";
     }
 }

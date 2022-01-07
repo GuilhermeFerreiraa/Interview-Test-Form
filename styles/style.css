@@ -7,7 +7,6 @@ body {
     font-family: "Open Sans", "Helvetica Neue";
 }
 
-
 /* ========== header  ========= */
 
 header {
@@ -43,12 +42,6 @@ header {
     transition: 0.5s;
 }
 
-
-/* ========== fim header  ========= */
-
-
-/* ========== main  ========= */
-
 .title {
     font-size: 24px;
     font-weight: 400;
@@ -62,14 +55,6 @@ header {
     height: 100%;
     width: 20px;
     transition: 0.5s;
-    -webkit-tap-highlight-color: transparent;
-}
-
-.arrow-2 {
-    border: none;
-    cursor: pointer;
-    height: 20px;
-    width: 20px;
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -87,13 +72,65 @@ header {
     height: 280px;
 }
 
-.container-1 .secao_text select {
+div .content-first-items {
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
-    border-radius: 16px;
-    border: 1px solid #000;
-    padding: 10px 16px;
+    column-gap: 20px;
+}
+div .content-second-items {
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 10px;
+    display: grid;
+    gap: 20px;
+    width: 80%;
+}
+
+div .item-1,
+.item-2,
+.item-3,
+.item-4,
+.item-5,
+.item-6 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: bold;
+}
+
+div .item-1{
+    width: 25%;
+}
+
+div .item-2{
+    width: 43%;
+}
+div 
+.item-1 input,
+.item-2 input,
+.item-3 input, 
+.item-4 input, 
+.item-5 input{
+    border-radius: 20px;
+    border: 1px solid gray;
+    padding: 8px 16px;
+}
+div 
+.item-1 label,
+.item-2 label, 
+.item-3 label, 
+.item-4 label, 
+.item-5 label, 
+.item-6 label{
+    padding-left: 15px;
+}
+
+div .item-6 select{
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid gray;
+    padding: 8px 16px;
     -webkit-appearance: none;
-    -moz-appearance: none;
     background: transparent;
     background-image: url("../assets/images/arrow.svg");
     background-size: 12px;
@@ -101,157 +138,8 @@ header {
     background-position-x: 90%;
     background-position-y: 50%;
     color: #797979;
-}
-
-
-/* ========== form - 1 ========= */
-
-.container-1 .form-1 .produto_text label {
-    font-size: medium;
-    font-weight: bold;
-    margin-top: 10px;
-    padding-left: 15px;
-}
-
-.container-1 .form-1 .produto_text input {
-    width: 350px;
-    border-radius: 16px;
-    border: 1px solid #000;
-    padding: 10px 16px;
-    margin-top: 10px;
-}
-
-.container-1 .form-1 .descricao_text label {
-    font-size: medium;
-    font-weight: bold;
-    margin-top: 10px;
-    padding-left: 15px;
-}
-
-.container-1 .form-1 .descricao_text input {
-    width: 515px;
-    border-radius: 16px;
-    border: 1px solid #000;
-    padding: 10px 16px;
-    margin-top: 10px;
-}
-
-
-/* ====== line-1 ======= */
-
-.line-1 {
-    gap: 20px;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    height: 70px;
-}
-
-
-/* ====== fim line-1 ======= */
-
-
-/* ====== line-2 ======= */
-
-.line-2 {
-    margin-top: 16px;
-    gap: 15px;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-
-/* ===== departamento ===== */
-
-.container-1 .form-1 .departamento_text label {
-    font-size: medium;
-    font-weight: bold;
-    margin-top: 10px;
-    padding-left: 15px;
-}
-
-.container-1 .form-1 .departamento_text input {
-    width: 250px;
-    border-radius: 16px;
-    border: 1px solid #000;
-    padding: 10px 16px;
-    margin-top: 10px;
-}
-
-
-/* ===== departamento fim ===== */
-
-
-/* ===== secao ===== */
-
-.container-1 .form-1 .secao_text label {
-    font-size: medium;
-    font-weight: bold;
-    margin-top: 10px;
-    padding-left: 15px;
-}
-
-.container-1 .form-1 .secao_text input {
-    width: 210px;
-    border-radius: 16px;
-    border: 1px solid #000;
-    padding: 10px 16px;
-    margin-top: 10px;
-}
-
-
-/* ===== fim secao ===== */
-
-
-/* ===== grupo ===== */
-
-.container-1 .form-1 .grupo_text label {
-    font-size: medium;
-    font-weight: bold;
-    margin-top: 10px;
-    padding-left: 15px;
-}
-
-.container-1 .form-1 .grupo_text input {
-    width: 215px;
-    border-radius: 16px;
-    border: 1px solid #000;
-    padding: 10px 16px;
-    margin-top: 10px;
-}
-
-
-/* ===== fim grupo ===== */
-
-
-/* ===== quantidade ===== */
-
-.container-1 .form-1 .quant_text label {
-    font-size: medium;
-    font-weight: bold;
-    margin-top: 10px;
-    padding-left: 15px;
-}
-
-select:hover {
     cursor: pointer;
 }
-
-
-/* ===== fim quantidade ===== */
-
-
-/* ====== fim line-2 ======= */
-
-
-/* ========== fim form - 1 ========= */
-
-
-/*
-============================================ 
-*/
-
 
 /* ========== SECTION 2  ========= */
 
@@ -265,70 +153,35 @@ select:hover {
     width: 65%;
     height: 10%;
 }
-
-
-/* ===== line 1 ===== */
-
-.container-2 .line-1 {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-top: 15px;
-    height: 10%;
-}
-
-.container-2 .line-1 label {
-    font-size: medium;
-    font-weight: bold;
-    padding-top: 15px;
-    padding-left: 15px;
-}
-
-.container-2 .line-1 input {
-    width: 290px;
-    border-radius: 16px;
-    border: 1px solid #000;
-    padding: 10px 16px;
+.second-section-items {
+    display: grid;  
+    grid-template-columns: repeat(4, 1fr);
     margin-top: 10px;
-}
-
-.container-2 .line-1 input {
-    width: 100%;
-    border-radius: 16px;
-    border: 1px solid #000;
-    padding: 10px 16px;
-    margin-top: 10px;
-}
-
-
-/* ===== line-1 fim ===== */
-
-.descricao-container {
     gap: 20px;
-    margin-top: 5px;
 }
 
-.container-2 .descricao-container label {
-    font-size: medium;
-    font-weight: bold;
+.second-section-items div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.second-section-items div label{
     padding-left: 15px;
+    font-weight: bold;
+}
+.second-section-items div input{
+    border-radius: 20px;
+    border: 1px solid gray;
+    padding: 8px 16px;
 }
 
-.container-2 .descricao-container input {
-    width: 300px;
-    border-radius: 16px;
-    border: 1px solid #000;
-    padding: 10px 16px;
-    margin-top: 10px;
-}
-
-.container-2 select {
-    width: 95%;
-    border-radius: 16px;
-    border: 1px solid #000;
-    padding: 10px 16px;
+.second-section-items div select {
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid gray;
+    padding: 8px 16px;
     -webkit-appearance: none;
-    -moz-appearance: none;
     background: transparent;
     background-image: url("../assets/images/arrow.svg");
     background-size: 12px;
@@ -336,13 +189,16 @@ select:hover {
     background-position-x: 90%;
     background-position-y: 50%;
     color: #797979;
-    margin-top: 10px;
+    cursor: pointer;
 }
 
-
-/* ===== line-2 fim ===== */
-
-
+.arrow-2 {
+    border: none;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    -webkit-tap-highlight-color: transparent;
+}
 /* ========== SECTION 3  ========= */
 
 .container-3 {
@@ -360,7 +216,7 @@ select:hover {
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
-    width: 35%;
+    width: 40%;
     margin: 0;
 }
 
@@ -372,7 +228,6 @@ select:hover {
     gap: 15px;
     margin: 20px 15px;
 }
-
 
 /* ========== SECTION 4  ========= */
 
@@ -408,17 +263,15 @@ table tr {
 
 table th,
 table td {
-    padding: 0.625em;
+    padding: 10px 0;
     text-align: center;
+    font-size: 14px;
 }
 
 table th {
     color: #fff;
-    font-size: 15px;
+    font-size: 13px;
 }
-
-
-/* ============ line Highlight ============ */
 
 .highlight {
     background-color: #fff2e6 !important;
@@ -427,10 +280,6 @@ table th {
 .loja-td {
     color: #d66902;
 }
-
-
-/* ============ end line Highlight ============ */
-
 
 /* ============ SECTION 5  ============ */
 
@@ -471,24 +320,7 @@ table th {
     cursor: pointer;
 }
 
-.button-container {
-    width: 100%;
-}
-
-.button__form {
-    background-image: linear-gradient(to right, #ff7c00, #ffa100);
-    padding: 12px 45px;
-    color: #fff;
-    border-radius: 20px;
-    border: none;
-    font-size: 15px;
-    cursor: pointer;
-    margin-left: 17.5%;
-    margin-bottom: 15px;
-}
-
-
-/* ========== FIM SECTION 5  ========= */
+/* ========= section button ========= */
 
 .button__message {
     height: 50px;
@@ -503,16 +335,24 @@ table th {
     -webkit-tap-highlight-color: transparent;
     box-shadow: 2px 2px 5px #646464;
 }
-
-
-/* ========= fim main =========  */
-
-
+.button__form {
+    background-image: linear-gradient(to right, #ff7c00, #ffa100);
+    padding: 12px 45px;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 17.5%;
+    margin-bottom: 15px;
+}
+.button-add {
+    width: 100%;
+}
 /* =========== Responsive Mode =========== */
 
 
 /* NAVBAR */
-
 @media screen and (min-width: 200px) and (max-width: 800px) {
     .navbar a:not(:first-child) {
         display: none;
@@ -532,7 +372,6 @@ table th {
         width: 100%;
     }
 }
-
 @media screen and (min-width: 200px) and (max-width: 1200px) {
     .navbar.responsive {
         position: relative;
@@ -550,12 +389,7 @@ table th {
     }
 }
 
-
-/* END NAVBAR */
-
-
 /* TABLE */
-
 @media screen and (min-width: 200px) and (max-width: 900px) {
     table {
         border: 0;
@@ -594,333 +428,171 @@ table th {
     }
 }
 
-
-/* END TABLE */
-
-@media screen and (max-width: 650px) {
-    .container-1,
-    .container-2,
-    .container-3,
-    .container-5 {
-        width: 95%;
-        height: 10%;
-        margin: 16px auto;
-        transition: 0.5s;
-    }
-    .container-1 .form-1 .produto_text input {
-        width: 100%;
-    }
-    .container-1 .form-1 .descricao_text input {
-        width: 100%;
-    }
-    .container-1 .form-1 .departamento_text input {
-        width: 100%;
-    }
-    .container-1 .form-1 .secao_text input {
-        width: 100%;
-    }
-    .container-1 .form-1 .grupo_text input {
-        width: 100%;
-    }
-    .container-1 .form-1 .quant_text select {
-        width: 100%;
-    }
-    .quant_text {
-        margin-top: 15px;
-    }
-    .line-1 {
-        gap: 10px;
-        display: block;
-    }
-    .line-2 {
-        display: block;
-        margin: 90px auto 0;
-    }
-    .container-2 .line-1 {
-        grid-template-columns: 1fr;
-    }
-    .content-select {
-        width: 100%;
-    }
-    .content-select-image {
-        justify-content: center;
-    }
-    .image__check {
-        grid-template-columns: 1fr 1fr;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
-    .button__form {
-        margin-left: 5%;
-        -webkit-tap-highlight-color: transparent;
-    }
-    .container-2 .line-1 input {
-        width: 100%;
+/* responsividade container-1, container-2 */
+@media screen and (max-width:1879px){
+    div .content-second-items{
+        width: 83%;
     }
 }
 
-@media screen and (min-width: 600px) and (max-width: 650px) {
-    .image__check {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-
-/* ======= IPhone X  & Moto G4  ======= */
-
-@media screen and (min-width: 320px) and (max-width: 450px) {
-    .container-1 .form-1 .quant_text select {
-        width: 100%;
-    }
-    .container-1 .form-1 input {
-        width: 100%;
-    }
-    .quant_text {
-        margin: 0;
-        width: 100%;
-    }
-    .secao_text {
-        width: 100%;
-    }
-    .image__check .col-1 img {
-        width: 100px;
-        height: 100px;
-    }
-    .image__check .col-1 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 15px;
-        margin: 10px 15px;
-    }
-    .button__message {
-        right: 5%;
-    }
-}
-
-
-/* ======= Galaxy Fold =======*/
-
-@media screen and (max-width: 320px) {
-    .image__check {
-        grid-template-columns: 1fr;
-        margin: 0 auto;
-    }
-    .image__check .col-1 {
-        margin: 10px auto;
-    }
-    table td {
-        font-size: 0.9em;
-    }
-    .title {
-        font-size: 20px;
-    }
-    .quant_text {
-        margin: 10px 0 0;
-    }
-}
-
-
-/* ======= End  Galaxy Fold =======*/
-
-@media screen and (max-width: 451px) {
-    .container-2 select {
-        width: 100%;
-    }
-    .image__check .col-1 img {
-        width: 130px;
-        height: 130px;
-    }
-    .image__check {
-        grid-template-columns: 1fr;
-    }
-    .button__message {
-        right: 5%;
-    }
-    .container-1 .form-1 .quant_text select {
-        width: 100%;
-    }
-    table td {
-        font-size: 0.95em;
-    }
-}
-
-@media screen and (max-width: 419px) {
-    .image__check .col-1 img {
-        width: 130px;
-        height: 130px;
-    }
-    .image__check {
-        grid-template-columns: 1fr;
-    }
-}
-
-
-/* Portrait Orientation ON */
-
-@media screen and (min-width: 717px) and (max-width: 1000px) {
-    .container-3 {
-        grid-template-columns: repeat(3, 1fr);
-        justify-content: center;
-        align-items: center;
+@media screen and (min-width:1024px) and (max-width:1440px) {
+    .container-1, .container-2, .container-3 ,.container-4, .container-5{
         width: 95%;
     }
-    .image__check {
+    div .item-3 input, .item-4 input, .item-5 input, .item-6 select{
         width: 100%;
+    }
+    div .content-second-items{
+        width: 100%;
+    }
+    .navbar{
+        width: 95%;
+    }
+    .second-section-items {
         grid-template-columns: repeat(3, 1fr);
     }
-    .container-1 .form-1 .descricao_text input {
+    .image__check{
+        grid-template-columns: repeat(3, 150px);
         width: 100%;
-    }
-    .container-1,
-    .container-2 {
-        height: 10%;
-        width: 95%;
-    }
-    .container-2 .line-1 {
-        grid-template-columns: 1fr 1fr;
-        margin: 16px auto;
-        gap: 15px;
-    }
-    .container-2 select {
-        width: 100%;
-    }
-    .content .produto {
-        width: 100%;
-    }
-    .container-5 {
-        width: 95%;
-    }
-    .container-2 .line-1 input {
-        width: 100%;
-    }
-    .button__form {
-        margin-left: 3%;
-    }
-    .button__message {
-        right: 3%;
-    }
-    table td {
-        font-size: 15px;
-    }
-    .line-1 {
-        display: grid;
-        grid-template-columns: 1fr 0fr 1fr 0fr;
-        gap: 0px;
-    }
-    .descricao_text {
-        width: 100%;
-    }
-    .produto_text {
-        width: 100%;
-    }
-    .container-1 .form-1 .produto_text input {
-        width: 95%;
-    }
-    .container-1 .form-1 .quant_text select {
-        width: 100%;
-    }
-    .departamento_text {
-        width: 48%;
-    }
-    .container-1 .form-1 .secao_text input {
-        width: 100%;
-    }
-    .secao_text {
-        width: 50%;
-    }
-    .container-1 .form-1 .departamento_text input {
-        width: 100%;
-    }
-    .grupo_text {
-        width: 100%;
-    }
-    .container-1 .form-1 .grupo_text input {
-        width: 100%;
-    }
-    .quant_text {
-        width: 100%;
-    }
-    .line-2 {
-        margin-top: 16px;
-        gap: 6px;
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-    .navbar {
-        width: 95%;
-    }
-}
-
-
-/* ======== Nest Hub Max ========  */
-
-@media screen and (min-width: 1000px) and (max-width: 1280px) {
-    .container-1,
-    .container-2,
-    .container-3,
-    .container-4,
-    .container-5 {
-        height: 10%;
-        width: 80%;
-    }
-    .produto_text {
-        width: 100%;
-    }
-    .descricao_text {
-        width: 100%;
-    }
-    .container-1 .form-1 .descricao_text input {
-        width: 100%;
-    }
-    .line-1 {
-        gap: 0px;
-        height: 190px;
-    }
-    .container-1 .form-1 .produto_text input {
-        width: 100%;
-    }
-    .container-2 .line-1 {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        margin-top: 15px;
-        gap: 20px;
-        height: 10%;
-    }
-    .quant_text input {
-        width: 100%;
-    }
-    .container-2 select {
-        width: 100%;
-    }
-    .image__check {
-        grid-template-columns: repeat(3, 1fr);
-        margin: 0 auto;
-        width: 100%;
-    }
-    table td {
-        display: block;
-        font-size: 0.99em;
-        text-align: right;
-    }
-    .navbar {
-        width: 85%;
-    }
-    .button__form {
-        margin-left: 10.5%;
-    }
-    .button__message {
-        right: 4%;
-    }
-    .line-2 {
-        column-gap: 3px;
         justify-content: flex-start;
     }
+    table th {
+        padding: 5px 0;
+        font-size: 11px;
+    }
+
 }
 
+@media screen and (min-width:768px) and (max-width:1023px){
+    .container-1, .container-2, .container-3 ,.container-4, .container-5{
+        width: 95%;
+        height: 10%;
+    }
 
-/* ======== END RESPONSIVE MODE ======== */
+    div .content-second-items{
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    div .item-1, div .item-2 {
+        width: 48%;
+    }
+    .second-section-items{
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    .navbar{
+        width: 95%;
+    }
+    .image__check{
+        grid-template-columns: repeat(3, 150px);
+        width: 100%;
+        justify-content: flex-start;
+    }
+    table td::before{
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px){
+    .container-1, .container-2, .container-3 ,.container-4, .container-5{
+        width: 95%;
+        height: 10%;
+    }
+    div .content-second-items {
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 10px;
+    }
+    div .item-1, div .item-2{
+        width: 100%;
+        margin-top: 10px;
+    } 
+    .second-section-items{
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 10px;
+    }
+    .container-2{
+        width: 95%;
+    }
+    .image__check{
+        grid-template-columns: repeat(2, 150px);
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width: 424px){
+    div .content-second-items {
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    div .item-1, div .item-2{
+        width: 100%;
+        margin-top: 10px;
+    } 
+    .second-section-items{
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 10px;
+    }
+    .container-1, .container-2, .container-3 ,.container-4, .container-5{
+        width: 95%;
+        height: 10%;
+    }
+    .image__check{
+        grid-template-columns: repeat(1, 150px);
+        width: 100%;
+        justify-content: center;
+    }
+    .content-select-image .content-select{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 280px) and (max-width:319px){
+    .title{
+        font-size: 20px;
+    }
+    div .content-second-items {
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    div .item-1, div .item-2{
+        width: 100%;
+        margin-top: 10px;
+    } 
+    .second-section-items{
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 10px;
+    }
+    .container-1, .container-2, .container-3 ,.container-4, .container-5{
+        width: 95%;
+        height: 10%;
+        padding: 16px;
+    }
+    .image__check{
+        grid-template-columns: repeat(1, 150px);
+        width: 100%;
+        justify-content: center;
+    }
+    .content-select-image .content-select{
+        width: 100%;
+    }
+   .content-select-image{            
+        justify-content: center;
+    }
+    .button__message{
+        right: 5%;
+        height: 40px;
+        width: 40px;
+    }
+    .button__form{
+        margin-left: 20%;
+    }
+}
