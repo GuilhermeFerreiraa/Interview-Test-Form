@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap");
-
 /* ============== Google Fonts ==============  */
-
+html{
+    scroll-behavior: smooth;
+}
 body {
     background-color: #f2f2f2;
     font-family: "Open Sans", "Helvetica Neue";
@@ -460,7 +461,12 @@ table th {
         padding: 5px 0;
         font-size: 11px;
     }
-
+    .button__message{
+        right: 5%;
+    }
+    .button__form{
+        margin-left: 3%;
+    }
 }
 
 @media screen and (min-width:768px) and (max-width:1023px){
@@ -468,7 +474,6 @@ table th {
         width: 95%;
         height: 10%;
     }
-
     div .content-second-items{
         width: 100%;
         grid-template-columns: repeat(2, 1fr);
@@ -490,6 +495,12 @@ table th {
     }
     table td::before{
         font-size: 14px;
+    }
+    .button__message{
+        right: 5%;
+    }
+    .button__form{
+        margin-left: 3%;
     }
 }
 
@@ -520,6 +531,15 @@ table th {
         width: 100%;
         justify-content: space-between;
     }
+    .button__message{
+        right: 5%;
+    }
+    .button__form{
+        margin-left: 3%;
+    }
+    .content-select-image{
+        justify-content: center;
+    }
 }
 
 @media screen and (min-width:320px) and (max-width: 424px){
@@ -549,6 +569,15 @@ table th {
     }
     .content-select-image .content-select{
         width: 100%;
+    }
+    .content-select-image{
+        justify-content: center;
+    }
+    .button__message{
+        right: 5%;
+    }
+    .button__form{
+        margin-left: 5%;
     }
 }
 
@@ -593,6 +622,6 @@ table th {
         width: 40px;
     }
     .button__form{
-        margin-left: 20%;
+        margin-left: 3%;
     }
 }

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="700pt" height="700pt" version="1.1" viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+ <g>
+  <path d="m555.08 210-102.38-94.281-102.38 94.281 27.891 30.188 53.922-49.766v233.41h41.125v-233.41l53.922 49.766z" fill="#fff"/>
+  <path d="m267.86 369.58v-233.41h-41.125v233.41l-53.922-49.766-27.891 30.188 102.38 94.281 102.38-94.281-27.891-30.188z" fill="#fff"/>
+ </g>
+</svg>
