@@ -37,7 +37,7 @@
             </nav>
         </header>
         <main>
-            <!--- Dados do Produto -->
+                <!--- Dados do Produto -->
             <section>
                 <form>
                     <div class="container-1">
@@ -353,16 +353,24 @@
                         <hr
                             style="height:1px;border-width:0;color:gray;background-color:gray">
                         <div class="content-select-image">
-                            <img id="image-select" height="150" width="150"
-                                src="./assets/images/backgroundImg.png"
-                                alt="your image" style="border: 1px solid #ddd"
-                                />
+                            <img 
+                            id="output" 
+                            height="150" 
+                            width="150"
+                            src="./assets/images/backgroundImg.png"  
+                            alt="your image" 
+                            style="border: 1px solid #ddd"
+                            />
+
                             <div class="content-select">
                                 <label>Arquivo</label>
-                                <input type="file" id="img" name="img"
-                                    onchange="readURL(this);"
-                                    class="insert-image"
-                                    accept="image/*">
+                                <input 
+                                type="file" 
+                                id="file" 
+                                name="img"
+                                onchange="loadFile(event)"
+                                class="insert-image"
+                                accept="image/*">
                             </div>
                         </div>
                     </div>

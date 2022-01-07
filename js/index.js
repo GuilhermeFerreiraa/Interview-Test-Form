@@ -1,5 +1,4 @@
 // ========== navbar responsive =============
-
 function responsive() {
     var nav = document.getElementById("topnav");
     var icon = document.getElementById("icon");
@@ -16,7 +15,6 @@ function responsive() {
 }
 
 // ========== hidden section =============
-
 function hiddenSection() {
     let firstItem = document.querySelector("#first-items");
     let secondItem = document.querySelector("#second-items");
@@ -55,7 +53,6 @@ function hiddenSection2() {
 }
 
 // ========== table order =============
-
 function sortTable(n) {
     var table,
         rows,
@@ -100,17 +97,8 @@ function sortTable(n) {
         }
     }
 }
-
 // ========= select image =============
-
-function readURL(input) {
-    if (input.files && input.files[0]) {
-        var reader = new FileReader();
-
-        reader.onload = function(e) {
-            $("#image-select").attr("src", e.target.result).width(150).height(150);
-        };
-
-        reader.readAsDataURL(input.files[0]);
-    }
-}
+var loadFile = function(event) {
+	var image = document.getElementById('output');
+	image.src = URL.createObjectURL(event.target.files[0]);
+};
