@@ -18,15 +18,11 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Acessar link do projeto: https://interview-form-front-end.netlify.app
 
-O objetivo do projeto é aplicar os conceitos e conhecimentos que obtive em um curto período de tempo, com uma aplicação de picos e novidades para skatistas, podendo saber quais os picos que a galera ta curtindo no momento, e fora isso, algumas camisetas e vídeos que podem acompanhar de algumas manobras.💪 
+O objetivo do projeto colocar em prática meus conhecimentos em Front-end para uma determinada vaga de Dev! :)
 
 ## 🔖 Layout
 
-O layout desta aplicação foi desenvolvido e pode ser acessado através do link https://www.figma.com/file/ibWktwVpnog76rMYOdVhks/Dispondo-elementos-com-flexbox-e-grid?node-id=72%3A4665
-
-## 📚 Aprendizado
-
-O objetivo do projeto foi aprimorar meus conhecimentos em CSS3, através do esquema de Flexbox e Grid. Contando também com as tags semânticas do HTML5, e de funções básicas para o modo responsivo do layout em mobile, que eu curti demais fazer.
+O layout desta aplicação foi desenvolvido pelo Ui/UX da empresa para o teste prático.
 
 ## :memo: Licença
 
