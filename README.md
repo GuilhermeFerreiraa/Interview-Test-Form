@@ -1,17 +1,39 @@
-# Interview Test - FrontEnd
-<div>
+<p align="center">
+ 🚀 <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+ 💻 <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+ 🔖 <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+ 🤔 <a href="#-como-usar">Como Usar?</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+ :memo: <a href="#memo-licença">Licença</a>
+</p>
 
-## Desktop Version
-<hr>
-<img align="center" width="500px" src="https://cdn.discordapp.com/attachments/784133268592132107/1065410387102675014/desktop.png" />
+## 🚀 Tecnologias
 
-## Tablet Version - Mobile Version
-</div>
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-<div align="top">
-<img align="center" width="400px" src="https://cdn.discordapp.com/attachments/784133268592132107/1065410410322341888/tablet.png" />
-<img align="center" src="https://media.discordapp.net/attachments/784133268592132107/1065410420778741770/mobile.png?width=85&height=676" />
+- CSS3 (GRID - FLEXBOX)
+- JavaScript
+- HTML5
 
-</div>
-<hr/>
-*Document write in html with css, just to show how to create and structure folder files. Oh, and using mobile first concept* :)
+## 💻 Projeto
+
+Acessar link do projeto: https://interview-form-front-end.netlify.app
+
+O objetivo do projeto é aplicar os conceitos e conhecimentos que obtive em um curto período de tempo, com uma aplicação de picos e novidades para skatistas, podendo saber quais os picos que a galera ta curtindo no momento, e fora isso, algumas camisetas e vídeos que podem acompanhar de algumas manobras.💪 
+
+## 🔖 Layout
+
+O layout desta aplicação foi desenvolvido e pode ser acessado através do link https://www.figma.com/file/ibWktwVpnog76rMYOdVhks/Dispondo-elementos-com-flexbox-e-grid?node-id=72%3A4665
+
+## 📚 Aprendizado
+
+O objetivo do projeto foi aprimorar meus conhecimentos em CSS3, através do esquema de Flexbox e Grid. Contando também com as tags semânticas do HTML5, e de funções básicas para o modo responsivo do layout em mobile, que eu curti demais fazer.
+
+## :memo: Licença
+
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes
+
+---
+*site possui telas não desenvolvidas, o projeto ainda está na fase beta da aplicação :)
+
+
+Desenvolvido por Guilherme Ferreira.
